@@ -1,0 +1,13 @@
+---
+title: "Mass Spec Academy"
+---
+
+The goal of this project is to create an online resource that provides comprehensive and accessible information on mass spectrometry methods used in geochronology, comprising:
+
+- A detailed description and history of the method
+- Best practices for sample preparation and analysis
+- A guide to data and uncertainty analysis
+- Applications, and case studies from peer-reviewed research
+- Short exercises and worked solutions appropriate for graduate students.
+
+_This material is based upon work supported by the National Science Foundation under Grant Nos. EAR-2218547 and -2218544. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. Thanks to the AGeS program for its support._
