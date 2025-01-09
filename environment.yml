@@ -1,4 +1,4 @@
-name: /Users/n733m382/Library/CloudStorage/Dropbox/My Mac (KU-C02DG1NKML86)/Documents/GitHub/quartoSandbox/env
+name: ./env
 channels:
   - defaults
   - conda-forge

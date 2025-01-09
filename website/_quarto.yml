@@ -8,12 +8,77 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+    right:
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://github.com/noahmclean/quartoSandbox
+          - text: Suggest an edit
+            href:  https://github.com/noahmclean/quartoSandbox/issues/new
+  sidebar:
+    style: docked
+    search: true
+    logo: figs/logo3_250.jpg
+    contents:
+      - text: "Introduction"
+        href: index.qmd
+      - section: "Overview and Background"
+        href: background.qmd
+        contents:
+          - text: "Ion Sources"
+            href: ion_sources.qmd
+          - text: "Bending Ion Flight Paths"
+            href: bending_ion_flight_paths.qmd
+          - text: "Detecting Ion Beams"
+            href: detecting_ion_beams.qmd
+      - section: "Analytical Considerations"
+        href: analyticalConsiderations.qmd
+        contents:
+          - text: "Baselines"
+            href: baselines.qmd
+          - text: "Peak Tails and Abundance Sensitivity"
+            href: peak_tails_abundance_sensitivity.qmd
+          - text: "Mass Fractionation"
+            href: mass_fractionation.qmd
+          - text: "Collector Relative Efficiencies"
+            href: collector_relative_efficiencies.qmd
+      - section: "Isotope Systems"
+        href: isotope_systems.qmd
+        contents:
+          - text: "Uranium"
+            href: Uranium.qmd
+          - text: "Lead" 
+            href: Lead.qmd
+          - text: "U-Pb" 
+            href: U_Pb.qmd
+          - text: "Any others"
+            href: AnyOthers.qmd
+      - section: "Interpreting Mass Spec Data"
+        href: interpreting_data.qmd
+        contents:
+          - text: "Statistics Refresher"
+            href: basic_stats_refresher.qmd
+          - text: "Measuring Relative Abundances"
+            href: measuring_relative_abundances.qmd
+          - text: "Sample-standard Bracketing"
+            href: sample_standard_bracketing.qmd
+          - text: "Uncertainty Propagation"
+            href: uncertainty_propagation.qmd
+          - text: "Static and Dynamic Analyses"
+            href: static_dynamic_analyses.qmd
+      - text: "Glossary"
+        href: glossary.qmd
+      - text: "Acknowledgments"
+        href: acknowledgments.qmd
 
 format:
   html:
     theme: flatly
     css: styles.css
     toc: true
-
-
-
+    toc-depth: 4
+    toc-expand: 3
+    toc-title: "Contents"
+    link-external-icon: true
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/www\.quarto\.org\/custom'
