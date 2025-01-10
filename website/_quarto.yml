@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Mass Spec Academy"
@@ -19,12 +20,15 @@ website:
     style: docked
     search: true
     logo: figs/logo3_250.jpg
+    collapse-level: 1
     contents:
       - text: "Introduction"
         href: index.qmd
-      - section: "Overview and Background"
-        href: background.qmd
+      - section: "Background"
+        href: overview.qmd
         contents:
+          - text: "Physics and Chemistry Refresher"
+            href: background.qmd
           - text: "Ion Sources"
             href: ion_sources.qmd
           - text: "Bending Ion Flight Paths"
@@ -82,3 +86,4 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     link-external-filter: '^(?:http:|https:)\/\/www\.quarto\.org\/custom'
+    code-fold: true

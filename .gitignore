@@ -1,2 +1,6 @@
-env/
+/.quarto/
+/_site/
+_site/*
+/env/
 .DS_Store
+.DS_Store?

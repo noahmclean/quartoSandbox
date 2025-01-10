@@ -1,18 +1,9 @@
 ---
-title: "Overview and Background"
+title: "Physics and Chemistry Refresher"
 bibliography: references.bib
 lightbox: true
+jupyter: python3
 ---
-
-## What is a Mass Spectrometer?
-
-A mass spectrometer separates atoms by their atomic mass. Scientists have long known how to separate different elements based on their chemical properties. Thousands of years ago, metallic copper was first smelted from copper ore, giving rise to the [Copper Age](https://en.wikipedia.org/wiki/Chalcolithic). Modern geochemical labs efficiently separate even very chemically similar elements, such as the rare earth elements, via techniques like anion exchange chromatography. These techniques separate one element from another, like separating samarium (Sm) from neodymium (Nd).
-
-Recall that the number of protons in an atom determines the number of electrons that are needed to balance their charge. The number of electrons in an atom determines its chemical behavior —- whether and how it makes chemical bonds with other atoms. But the nucleus of an atom doesn’t just contain protons, it also contains neutrons. Atoms with the same number of protons but different numbers of neutrons are called isotopes. Different isotopes of the same element behave in a chemically similar manner: you can make CO$_{2}$ with $^{12}$C, $^{13}$C, or $^{14}$C.
-
-The relative abundances of the isotopes of an element are key to a broad array of geological processes, including the radioactivity used as a clock in geochronology, geochemical processes that fractionate radioactive parent isotopes from their radiogenic daughter products, and temperature- and environment-dependent kinetic reaction rates. To separate isotopes by their atomic mass, we need a mass spectrometer.
-
-Separating atoms by their atomic mass is usually accomplished by first ionizing the atoms, for instance by stripping an electron off to create an ion with a $+1$ positive charge. The ions can then be separated according to their mass-to-charge ratio, often denoted $m/z$.
 
 ## Background: Basic Concepts
 
@@ -33,7 +24,7 @@ The SI unit for mass is the kilogram, but samples analyzed for mass spectrometry
 | femtogram        | $10^{-15}$ grams | $6 \times 10^{8}$  | $3 \times 10^{7}$  |
 | attogram         | $10^{-18}$ grams | $602214$           | $30357$            |
 
-: SI prefixes for small things. {.striped .hover}
+: SI prefixes for small things. {.striped .hover }
 
 #### Other units for mass
 
@@ -75,7 +66,35 @@ Instead, mass spectrometers move the atoms by first ionizing them and then manip
 
 $$
 KE = qV = \dfrac{1}{2}mv^2
-$$
+$$ {#eq-kinetic_energy}
+
+```{python}
+#| label: fig-energy
+#| fig-cap: "Kinetic energy as a function of velocity for $^{238}$U"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+kg_per_amu = 1.66e-27
+mass_amu = 238
+mass_kg = mass_amu * kg_per_amu
+velocity_meters_per_second = np.linspace(0, 2, 100)
+kinetic_energy_joule = mass_kg * velocity_meters_per_second ** 2
+
+fig, ax = plt.subplots()
+
+ax.plot(velocity_meters_per_second, kinetic_energy_joule)
+
+ax.set_xlabel('Veclocity (m/s)')
+ax.set_ylabel('Kinetic Energy (J)')
+ax.set_title('Stupid Plot')
+fig.tight_layout
+
+plt.show()
+```
+
+
+
 
 #### References
 
