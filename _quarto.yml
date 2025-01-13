@@ -93,5 +93,6 @@ format:
     toc-title: "Contents"
     link-external-icon: true
     link-external-newwindow: true
-    link-external-filter: '^(?:http:|https:)noahmclean\.github\.io/quartoSandbox/([A-Za-z]+(\.[A-Za-z]+)+)'
+    link-external-filter: '^https:\/\/noahmclean\.github\.io.*$'
     code-fold: true
+  pdf: default
