@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Mass Spec Academy"
+  page-navigation: true
   navbar:
     left:
       - href: index.qmd
@@ -85,5 +86,5 @@ format:
     toc-title: "Contents"
     link-external-icon: true
     link-external-newwindow: true
-    link-external-filter: '^(?:http:|https:)\/\/www\.quarto\.org\/custom'
+    link-external-filter: '^(?:http:|https:)noahmclean\.github\.io/quartoSandbox/([A-Za-z]+(\.[A-Za-z]+)+)'
     code-fold: true

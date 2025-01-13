@@ -15,3 +15,10 @@ The relative abundances of the isotopes of an element are key to a broad array o
 
 Separating atoms by their atomic mass is usually accomplished by first ionizing the atoms, for instance by stripping an electron off to create an ion with a $+1$ positive charge. The ions can then be separated according to their mass-to-charge ratio, often denoted $m/z$.
 
+This section describes the physical and chemical principles of mass spectrometry.
+
+### Table of Contents
+1. [Physics and Chemistry Refresher](background.qmd)
+
+### Equations to memorize
+Equation @eq-kinetic_energy

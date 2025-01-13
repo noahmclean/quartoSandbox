@@ -3,6 +3,7 @@ title: "Physics and Chemistry Refresher"
 bibliography: references.bib
 lightbox: true
 jupyter: python3
+
 ---
 
 ## Background: Basic Concepts
