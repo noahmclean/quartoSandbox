@@ -1,15 +1,22 @@
 project:
-  type: website
+  type: book
   output-dir: docs
 
-website:
+book:
   title: "Mass Spec Academy"
+  favicon: figs/favicon.png
   page-navigation: true
+  chapters: 
+    - index.qmd
+    - background.qmd
+    - overview.qmd
+    - ion_sources.qmd
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
     right:
       - icon: github
         menu:
