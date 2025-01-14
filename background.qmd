@@ -6,11 +6,9 @@ jupyter: python3
 
 ---
 
-## Background: Basic Concepts
+## Forget the Spectrometer, What is a Mass?
 
-### Forget the Spectrometer, What is a Mass?
-
-#### SI units for mass
+### SI units for mass
 
 The SI unit for mass is the kilogram, but samples analyzed for mass spectrometry are usually much smaller. The table below lists some typical sample sizes for geochemistry, both as SI terms with prefixes and as fractions of a gram. As we will soon learn, the number of atoms in a gram depends on the atomic mass of the atoms. The third column gives the number of atoms of that mass. It starts with atoms of mass 12 unified mass units (i.e., $^{12}$C), but you can hover your slider over the blue atomic mass and drag left or right to increase or decrease its value.
 
@@ -27,7 +25,7 @@ The SI unit for mass is the kilogram, but samples analyzed for mass spectrometry
 
 : SI prefixes for small things. {.striped .hover }
 
-#### Other units for mass
+### Other units for mass
 
 The familiar (and perhaps unfamiliar!) SI prefixes down to the attogram still don’t reach a small enough value to easily compare the masses of single atoms, like $^{238}$U and $^{235}$U. For that, we’ll need a new unit, the unified mass unit, also known as the Dalton (symbols: u or Da). The unified atomic mass unit is not in the SI, but it’s commonly used in physics and chemistry for very small masses, like the mass of a single atom or molecule. It’s defined as $\frac{1}{12}$ the mass of a $^{12}$C atom. That’s about $1.660539 \times 10^{-27}$ kilograms. The equivalent unit Dalton is more widely used in the organic chemistry community.
 
@@ -57,13 +55,13 @@ Uranium oxide (UO$_2$) isotopologues for a natural U sample with a $^{233}$U-$^{
 
 :::
 
-### Energy, Electricity, and Magnetism
+## Energy, Electricity, and Magnetism
 
 To separate dissimilar objects like minerals or legos, one good strategy is to place them all together and then sort through and choose different elements from the pile. A chemical reaction might dissolve or precipitate one element and leave another behind. However, isotopes of the same element have nearly identical chemical behavior. Mass spectrometers don’t inspect and sort a stack of static individual atoms like sorting legos, and they can’t rely on chemical reactions to sort isotopes.
 
 Instead, mass spectrometers move the atoms by first ionizing them and then manipulating the ions with electrical and magnetic forces. The resulting kinetic changes in the isotopes’ motion depend on their atomic or molecular mass, which can be exploited to separate different isotopes. Once separated, the streams of ions in motion must be measured by sensitive electronic instruments. Here again, the ions’ electrical properties are important.
 
-#### Energy
+### Energy
 
 $$
 KE = qV = \dfrac{1}{2}mv^2
@@ -97,7 +95,7 @@ plt.show()
 
 
 
-#### References
+### References
 
 ::: {#refs}
 :::

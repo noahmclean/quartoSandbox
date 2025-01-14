@@ -1,10 +1,7 @@
----
-title: "Mass Spec Academy"
----
-
+<!--
 ![Magnetic Sector with Extended Geometry](figs/ExtendedGeometryLineDrawing.svg){width=60%}
-
-# Project Description
+-->
+## Preface {.unnumbered}
 
 The goal of this project is to create an online resource that provides comprehensive and accessible information on mass spectrometry methods used in geochronology, comprising:
 
@@ -14,7 +11,7 @@ The goal of this project is to create an online resource that provides comprehen
 - Applications, and case studies from peer-reviewed research
 - Short exercises and worked solutions appropriate for graduate students.
 
-### Funding
+## Funding {.unnumbered}
 
 _This material is based upon work supported by the National Science Foundation under Grant Nos. EAR-2218547 and -2218544. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. Thanks to the AGeS program for its support._
 

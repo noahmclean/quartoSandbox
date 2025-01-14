@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Overview – Mass Spec Academy</title>
+<title>Overview – Mass Spec Academy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,9 +30,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./ion_sources.html" rel="next">
-<link href="./background.html" rel="prev">
+<link href="./background.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href="./figs/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-01d45fadf03ded040e3b1c6cd3885c1a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b7c2d8834e08b04a63bb76a724ffbcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-overview-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-overview-listing'] = new List('listing-overview-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -103,13 +134,16 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./figs/logo3_250.jpg" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Mass Spec Academy</span>
     </a>
@@ -119,16 +153,6 @@ window.Quarto = {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.qmd"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -158,55 +182,104 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./overview.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Overview</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./overview.html">Background</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./figs/logo3_250.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Mass Spec Academy</span></span></a>
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./overview.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Background</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./background.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Physics and Chemistry Refresher</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Concept Review</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./overview.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ion_sources.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ion Sources</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ion Sources</span></span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Analytical Considerations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./baselines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Baselines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./peak_tails_abundance_sensitivity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Peak Tails and Abundance Sensitivity</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Isotope Systems</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./U_Pb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">U-Pb</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Interpreting Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic_stats_refresher.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Statistics for Mass Spectrometer Jockeys</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -217,11 +290,8 @@ window.Quarto = {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#what-is-a-mass-spectrometer" id="toc-what-is-a-mass-spectrometer" class="nav-link active" data-scroll-target="#what-is-a-mass-spectrometer"><span class="header-section-number">3.1</span> What is a Mass Spectrometer?</a>
-  <ul>
-  <li><a href="#table-of-contents" id="toc-table-of-contents" class="nav-link" data-scroll-target="#table-of-contents"><span class="header-section-number">3.1.1</span> Table of Contents</a></li>
-  <li><a href="#equations-to-memorize" id="toc-equations-to-memorize" class="nav-link" data-scroll-target="#equations-to-memorize"><span class="header-section-number">3.1.2</span> Equations to memorize</a></li>
-  </ul></li>
+  <li><a href="#what-is-a-mass-spectrometer" id="toc-what-is-a-mass-spectrometer" class="nav-link active" data-scroll-target="#what-is-a-mass-spectrometer">What is a Mass Spectrometer?</a></li>
+  <li><a href="#background-contents" id="toc-background-contents" class="nav-link" data-scroll-target="#background-contents">Background Contents</a></li>
   </ul>
 </nav>
     </div>
@@ -230,7 +300,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Overview</span></h1>
+<h1 class="title">Overview</h1>
 </div>
 
 
@@ -247,25 +317,63 @@ window.Quarto = {
 </header>
 
 
-<section id="what-is-a-mass-spectrometer" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="what-is-a-mass-spectrometer"><span class="header-section-number">3.1</span> What is a Mass Spectrometer?</h2>
+<section id="what-is-a-mass-spectrometer" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-mass-spectrometer">What is a Mass Spectrometer?</h2>
 <p>A mass spectrometer separates atoms by their atomic mass. Scientists have long known how to separate different elements based on their chemical properties. Thousands of years ago, metallic copper was first smelted from copper ore, giving rise to the <a href="https://en.wikipedia.org/wiki/Chalcolithic">Copper Age</a>. Modern geochemical labs efficiently separate even very chemically similar elements, such as the rare earth elements, via techniques like anion exchange chromatography. These techniques separate one element from another, like separating samarium (Sm) from neodymium (Nd).</p>
 <p>Recall that the number of protons in an atom determines the number of electrons that are needed to balance their charge. The number of electrons in an atom determines its chemical behavior —- whether and how it makes chemical bonds with other atoms. But the nucleus of an atom doesn’t just contain protons, it also contains neutrons. Atoms with the same number of protons but different numbers of neutrons are called isotopes. Different isotopes of the same element behave in a chemically similar manner: you can make CO<span class="math inline">\(_{2}\)</span> with <span class="math inline">\(^{12}\)</span>C, <span class="math inline">\(^{13}\)</span>C, or <span class="math inline">\(^{14}\)</span>C.</p>
 <p>The relative abundances of the isotopes of an element are key to a broad array of geological processes, including the radioactivity used as a clock in geochronology, geochemical processes that fractionate radioactive parent isotopes from their radiogenic daughter products, and temperature- and environment-dependent kinetic reaction rates. To separate isotopes by their atomic mass, we need a mass spectrometer.</p>
-<p>Separating atoms by their atomic mass is usually accomplished by first ionizing the atoms, for instance by stripping an electron off to create an ion with a <span class="math inline">\(+1\)</span> positive charge. The ions can then be separated according to their mass-to-charge ratio, often denoted <span class="math inline">\(m/z\)</span>.</p>
-<p>This section describes the physical and chemical principles of mass spectrometry.</p>
-<section id="table-of-contents" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="table-of-contents"><span class="header-section-number">3.1.1</span> Table of Contents</h3>
-<ol type="1">
-<li><a href="./background.html">Physics and Chemistry Refresher</a></li>
-</ol>
+<p>Separating atoms by their atomic mass is usually accomplished by first ionizing the atoms, for instance by stripping an electron off to create an ion with a <span class="math inline">\(+1\)</span> positive charge. The ions can then be separated according to their mass-to-charge ratio, often denoted <span class="math inline">\(m/z\)</span>, using electric and magnetic fields.</p>
 </section>
-<section id="equations-to-memorize" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="equations-to-memorize"><span class="header-section-number">3.1.2</span> Equations to memorize</h3>
-<p>Equation <a href="background.html#eq-kinetic_energy" class="quarto-xref">Equation&nbsp;<span>2.1</span></a></p>
+<section id="background-contents" class="level2">
+<h2 class="anchored" data-anchor-id="background-contents">Background Contents</h2>
+<div id="listing-overview-listing" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1736883823684" data-listing-reading-time-sort="6" data-listing-word-count-sort="1165">
+<div class="thumbnail">
+<p><a href="./background.html" class="no-external"></a></p><a href="./background.html" class="no-external">
+<p class="card-img-top"><img src="figs/uranium_oxide_isotopologues.svg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./background.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./background.html" class="no-external">Physics and Chemistry Refresher</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./background.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./background.html" class="no-external"></a></p><a href="./background.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1736894107578" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="thumbnail">
+<p><a href="./ion_sources.html" class="no-external"></a></p><a href="./ion_sources.html" class="no-external">
+<p><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/40/Calutron_ion_source.jpg?20070822135853" class="thumbnail-image"></p>
+</a><p><a href="./ion_sources.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./ion_sources.html" class="no-external">Ion Sources</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./ion_sources.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./ion_sources.html" class="no-external"></a></p><a href="./ion_sources.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
-</section>
+
 </section>
 
 </main> <!-- /main -->
@@ -695,13 +803,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./background.html" class="pagination-link" aria-label="Physics and Chemistry Refresher">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Physics and Chemistry Refresher</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ion_sources.html" class="pagination-link" aria-label="Ion Sources">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ion Sources</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./background.html" class="pagination-link" aria-label="Concept Review">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Concept Review</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

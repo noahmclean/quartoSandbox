@@ -1,8 +1,15 @@
 ---
 title: "Overview"
-bibliography: references.bib
-lightbox: true
-jupyter: python3
+listing:
+  id: overview-listing
+  contents:
+    - background.qmd
+    - ion_sources.qmd
+  type: default
+  sort: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, image]
 ---
 
 ## What is a Mass Spectrometer?
@@ -13,12 +20,9 @@ Recall that the number of protons in an atom determines the number of electrons 
 
 The relative abundances of the isotopes of an element are key to a broad array of geological processes, including the radioactivity used as a clock in geochronology, geochemical processes that fractionate radioactive parent isotopes from their radiogenic daughter products, and temperature- and environment-dependent kinetic reaction rates. To separate isotopes by their atomic mass, we need a mass spectrometer.
 
-Separating atoms by their atomic mass is usually accomplished by first ionizing the atoms, for instance by stripping an electron off to create an ion with a $+1$ positive charge. The ions can then be separated according to their mass-to-charge ratio, often denoted $m/z$.
+Separating atoms by their atomic mass is usually accomplished by first ionizing the atoms, for instance by stripping an electron off to create an ion with a $+1$ positive charge. The ions can then be separated according to their mass-to-charge ratio, often denoted $m/z$, using electric and magnetic fields.
 
-This section describes the physical and chemical principles of mass spectrometry.
+## Background Contents
 
-### Table of Contents
-1. [Physics and Chemistry Refresher](background.qmd)
-
-### Equations to memorize
-Equation @eq-kinetic_energy
+::: {#overview-listing}
+:::

@@ -1,6 +1,0 @@
----
-title: "About"
----
-
-## This is a website about isotopes and the mass spectrometers that love them.
-

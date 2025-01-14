@@ -41,7 +41,7 @@
 \makeatother
 \usepackage{xcolor}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
+\setcounter{secnumdepth}{3}
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -243,21 +243,10 @@
 
 \bookmarksetup{startatroot}
 
-\chapter{Mass Spec Academy}\label{mass-spec-academy}
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
 
-\begin{figure}[H]
-
-{\centering \includegraphics[width=0.6\linewidth,height=\textheight,keepaspectratio]{index_files/mediabag/figs/ExtendedGeometryLineDrawing.pdf}
-
-}
-
-\caption{Magnetic Sector with Extended Geometry}
-
-\end{figure}%
-
-\bookmarksetup{startatroot}
-
-\chapter{Project Description}\label{project-description}
+\markboth{Preface}{Preface}
 
 The goal of this project is to create an online resource that provides
 comprehensive and accessible information on mass spectrometry methods
@@ -278,7 +267,10 @@ used in geochronology, comprising:
   students.
 \end{itemize}
 
-\subsection{Funding}\label{funding}
+\section*{Funding}\label{funding}
+\addcontentsline{toc}{section}{Funding}
+
+\markright{Funding}
 
 \emph{This material is based upon work supported by the National Science
 Foundation under Grant Nos. EAR-2218547 and -2218544. Any opinions,
@@ -303,7 +295,7 @@ support.}
 
 \end{figure}%
 
-\bookmarksetup{startatroot}
+\part{Background}
 
 \chapter{Physics and Chemistry
 Refresher}\label{physics-and-chemistry-refresher}
@@ -534,8 +526,6 @@ KE = qV = \dfrac{1}{2}mv^2
 \begin{CSLReferences}{0}{1}
 \end{CSLReferences}
 
-\bookmarksetup{startatroot}
-
 \chapter{Overview}\label{overview}
 
 \section{What is a Mass
@@ -589,9 +579,23 @@ spectrometry.
 
 Equation Equation~\ref{eq-kinetic_energy}
 
-\bookmarksetup{startatroot}
-
 \chapter{Ion Sources}\label{ion-sources}
+
+\part{Analytical Considerations}
+
+\chapter{Baselines}\label{baselines}
+
+\chapter{Peak Tails and Abundance
+Sensitivity}\label{peak-tails-and-abundance-sensitivity}
+
+\part{Isotope Systems}
+
+\chapter{U-Pb}\label{u-pb}
+
+\part{Interpreting Data}
+
+\chapter{Statistics for Mass Spectrometer
+Jockeys}\label{statistics-for-mass-spectrometer-jockeys}
 
 
 
