@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.4)  14 JAN 2025 13:08
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.4)  14 JAN 2025 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,7 +1018,7 @@ Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)              on input line 298.
 [4
 
-]
+] [5]
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1035,13 +1035,13 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-[5
+[6
 
-] [6]
+]
 File: index_files/mediabag/figs/uranium_oxide_isotopologues.pdf Graphic file (t
 ype pdf)
 <use index_files/mediabag/figs/uranium_oxide_isotopologues.pdf>
-[7]
+[7] [8]
 File: background_files/figure-pdf/fig-energy-output-1.pdf Graphic file (type pd
 f)
 <use background_files/figure-pdf/fig-energy-output-1.pdf>
@@ -1052,15 +1052,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.527 \end{CSLReferences}
+l.571 \end{CSLReferences}
                           
 Here is how much of TeX's memory you used:
- 24205 strings out of 476683
- 468614 string characters out of 5804047
- 1861018 words of memory out of 5000000
- 44131 multiletter control sequences out of 15000+600000
+ 24199 strings out of 476683
+ 468189 string characters out of 5804047
+ 1862018 words of memory out of 5000000
+ 44125 multiletter control sequences out of 15000+600000
  518726 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  108i,9n,121p,10600b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on index.pdf (7 pages).
+Output written on index.pdf (8 pages).
