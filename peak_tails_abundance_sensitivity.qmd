@@ -1,2 +1,6 @@
 # Peak Tails and Abundance Sensitivity
 
+# References {.unnumbered}
+
+::: {#refs}
+:::

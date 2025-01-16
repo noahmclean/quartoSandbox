@@ -1,13 +1,14 @@
 ---
 title: "Ion Sources"
-image: https://upload.wikimedia.org/wikipedia/commons/4/40/Calutron_ion_source.jpg?20070822135853
+image: figs/calutron_source_closeup.jpg
 ---
 
 
-::: {#fig-calutron_tank } 
+:::{#fig-calutron_tank} 
 
-<img width="300" height=auto src="https://upload.wikimedia.org/wikipedia/commons/4/40/Calutron_ion_source.jpg?20070822135853"></img>
 
-Detail of the two ion source guns of the initial alpha calutron. Ion beams exit upwards into the funnel-shaped electrode boxes. (Source: [LBL NEWS Magazine, Vol. 6, No. 3, Fall 1981, p. 38](https://web.archive.org/web/20060929102724/http://imglib.lbl.gov/cgi-bin/ImgLib/displaytag/BERKELEY-LAB/ACCELERATORS/CALUTRONS/tags/96602761?both=small))
+![](figs/calutron_source_closeup.jpg)
 
+ One of the beta unit calutron sources. ORNL Photo 24574, from @Yergey_1997. 
+ 
 :::

@@ -27,6 +27,7 @@ book:
     - part: "Interpreting Data"
       chapters:
       - basic_stats_refresher.qmd
+    - references.qmd
   navbar:
     logo: figs/logo3_250.jpg
     right:

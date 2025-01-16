@@ -1,0 +1,10 @@
+---
+bibliography: references.bib
+---
+
+Unclear why this doesn't work.
+
+# References {.unnumbered}
+
+::: {#refs}
+:::

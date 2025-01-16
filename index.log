@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.4)  14 JAN 2025 16:50
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.4)  16 JAN 2025 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1045,6 +1045,10 @@ ype pdf)
 File: background_files/figure-pdf/fig-energy-output-1.pdf Graphic file (type pd
 f)
 <use background_files/figure-pdf/fig-energy-output-1.pdf>
+File: index_files/mediabag/figs/magnetic-force-sketch.pdf Graphic file (type pd
+f)
+<use index_files/mediabag/figs/magnetic-force-sketch.pdf>
+[9]
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -1052,15 +1056,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.571 \end{CSLReferences}
+l.576 \end{CSLReferences}
                           
 Here is how much of TeX's memory you used:
- 24199 strings out of 476683
- 468189 string characters out of 5804047
+ 24209 strings out of 476683
+ 468706 string characters out of 5804047
  1862018 words of memory out of 5000000
- 44125 multiletter control sequences out of 15000+600000
+ 44134 multiletter control sequences out of 15000+600000
  518726 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  108i,9n,121p,10600b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on index.pdf (8 pages).
+Output written on index.pdf (9 pages).

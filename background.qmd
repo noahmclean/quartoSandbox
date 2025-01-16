@@ -3,14 +3,14 @@ title: "Physics and Chemistry Refresher"
 bibliography: references.bib
 lightbox: true
 jupyter: python3
-
+image: figs/thumbnail-magnetic-force-sketch.svg
 ---
 
 ## Forget the Spectrometer, What is a Mass?
 
 ### SI units for mass
 
-The SI unit for mass is the kilogram, but samples analyzed for mass spectrometry are usually much smaller. The table below lists some typical sample sizes for geochemistry, both as SI terms with prefixes and as fractions of a gram. As we will soon learn, the number of atoms in a gram depends on the atomic mass of the atoms. The third column gives the number of atoms of that mass. It starts with atoms of mass 12 unified mass units (i.e., $^{12}$C), but you can hover your slider over the blue atomic mass and drag left or right to increase or decrease its value.
+The SI unit for mass is the kilogram, but samples analyzed for mass spectrometry are usually much smaller. The table below lists some typical sample sizes for geochemistry, both as SI terms with prefixes and as fractions of a gram. As we will soon learn, the number of atoms in a gram depends on the atomic mass of the atoms. The third column gives the number of atoms of that mass. It starts with atoms of mass 12 unified mass units (i.e., $^{12}$C), but you can hover your slider over the blue atomic mass and drag left or right to increase or decrease its value. 
 
 | Mass with Prefix | Mass in grams    | Atoms of $^{12}$C  | Atoms of $^{238}$U |
 |------------------|------------------|--------------------|--------------------|
@@ -92,10 +92,14 @@ fig.tight_layout
 plt.show()
 ```
 
+::: {fig-magnetic-force-dempster}
 
+![](figs/magnetic-force-sketch.svg)
 
+Magnetic force acts on a positively charged ion.  Figure after Bill O. 
+:::
 
-### References
+### References {.unnumbered}
 
 ::: {#refs}
 :::
